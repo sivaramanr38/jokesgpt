@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Maven Project Object Model (POM) definition -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<!-- POM model version -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Inherit defaults from Spring Boot starter parent -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.5.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<!-- Project coordinates -->
+	<groupId>com.genai</groupId>
+	<artifactId>jokesgpt</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- Project metadata -->
+	<name>jokes-gpt</name>
+	<description>An AI-powered jokes generator using Spring Boot</description>
+
+	<!-- Licensing information -->
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<!-- Developer information -->
+	<developers>
+		<developer>
+			<id>sivaramanr38</id>
+			<name>Sivaraman Raja</name>
+			<email>sivaramanr38@gmail.com</email>
+		</developer>
+	</developers>
+
+	<!-- Source Control Management (SCM) info -->
+	<scm>
+		<connection/> <!-- e.g., scm:git:https://github.com/user/repo.git -->
+		<developerConnection/> <!-- e.g., scm:git:ssh://github.com:user/repo.git -->
+		<tag/> <!-- e.g., HEAD -->
+		<url/> <!-- e.g., https://github.com/user/repo -->
+	</scm>
+
+	<!-- Project properties -->
+	<properties>
+		<java.version>21</java.version> <!-- Java version compatibility -->
+	</properties>
+
+	<!-- Dependencies required for the project -->
+	<dependencies>
+		<!-- Spring Boot Web Starter for building REST APIs -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Test Starter for unit and integration testing -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Gson library for JSON serialization/deserialization -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10.1</version>
+		</dependency>
+
+		<!-- Thymeleaf template engine for rendering HTML views -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<!-- DevTools for hot reloading during development -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- Build configuration -->
+	<build>
+		<plugins>
+			<!-- Plugin to package and run Spring Boot applications -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
