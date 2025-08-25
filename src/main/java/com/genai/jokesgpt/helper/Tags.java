@@ -43,7 +43,7 @@ public class Tags {
     public static final String SUBJECT_VALUE = "subject_value";
 
     /** First part of the prompt template, requesting jokes about a specific subject. */
-    public static final String PROMPT_1 = "1. Tell me 3 funny jokes about subject_value include relevant emoji";
+    public static final String PROMPT_1 = "1. Tell me a funny jokes about subject_value include relevant emoji";
 
     /** Second part of the prompt template, instructing the model to respond only with jokes. */
     public static final String PROMPT_2 = " 2. Do not say anything else apart from the joke like";
