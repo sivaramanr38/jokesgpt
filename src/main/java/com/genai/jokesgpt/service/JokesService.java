@@ -23,11 +23,11 @@ public class JokesService {
 
     /** The URL endpoint for the OpenRouter API, injected from application properties. */
     @Value("${openrouter.url}")
-    private String openRouterUrl;
+    String openRouterUrl;
 
     /** The API key used for authenticating requests to OpenRouter, injected from application properties. */
     @Value("${openrouter.key}")
-    private String apiKey;
+    String apiKey;
 
     /** Configuration helper for building model-specific request payloads. */
     @Autowired
